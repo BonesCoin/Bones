@@ -90,8 +90,11 @@ Point your miner to 127.0.0.1:55255
 and don't forget specify user and password as well.
  
 
- 
- 
+sudo apt-get update
+sudo apt-get install -y git-core build-essential libssl-dev libboost-all-dev libboost1.48-all-dev libdb5.1-dev libdb5.1++-dev libgtk2.0-dev 
+git clone https://github.com/BonesCoin/Bones.git 
+cd Bones/src
+make -f makefile.unix clean; make -f makefile.unix USE_UPNP= bonescoind
  
 LINUX COMPILE GUIDE
  
