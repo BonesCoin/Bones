@@ -93,6 +93,7 @@ and don't forget specify user and password as well.
 sudo apt-get update
 sudo apt-get install -y git-core build-essential libssl-dev libboost-all-dev libboost1.48-all-dev libdb5.1-dev libdb5.1++-dev libgtk2.0-dev 
 git clone https://github.com/BonesCoin/Bones.git 
+chmod 755 Bones/src/leveldb/build_detect_platform
 cd Bones/src
 make -f makefile.unix clean; make -f makefile.unix USE_UPNP= bonescoind
  
