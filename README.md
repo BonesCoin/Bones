@@ -97,5 +97,7 @@ git clone https://github.com/BonesCoin/Bones.git
 chmod 755 Bones/src/leveldb/build_detect_platform
 cd ~
 cd Bones/src
-make -f makefile.unix clean; make -f makefile.unix USE_UPNP= bonescoind
+mkdir obj
+make -f makefile.unix clean; make -f makefile.unix USE_UPNP=
+sudo cp bonescoind /usr/bin/bonescoind
 
